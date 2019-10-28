@@ -12,6 +12,7 @@ export default class ImageDetail extends React.Component{
         return (<View>
                 <Text>{this.props.title}</Text>
                 <Image style={Imagestyle.style} source={this.props.imageSource}/>
+                <Text>Image Score - {this.props.imgScore}</Text>
                 </View>)
     }
 }

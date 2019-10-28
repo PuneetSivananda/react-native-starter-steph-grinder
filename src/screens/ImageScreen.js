@@ -9,10 +9,10 @@ export default class ImageScreen extends React.Component{
 
     render(){
         return (<View>
-                <ImageDetail title="Forest" imageSource={require('../../assets/img/forest.jpg')} />
-                <ImageDetail title="Beach" imageSource={require('../../assets/img/beach.jpg')}/>
-                <ImageDetail title="Desert" imageSource={require('../../assets/img/desert.jpg')} />
-                <ImageDetail title="Mountain" imageSource={require('../../assets/img/mountain.jpg')} />
+                <ImageDetail title="Forest" imageSource={require('../../assets/img/forest.jpg')} imgScore={10} />
+                <ImageDetail title="Beach" imageSource={require('../../assets/img/beach.jpg')} imgScore={7}/>
+                <ImageDetail title="Desert" imageSource={require('../../assets/img/desert.jpg')} imgScore={13}/>
+                <ImageDetail title="Mountain" imageSource={require('../../assets/img/mountain.jpg')} imgScore={11}/>
                 </View>)
     }
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Text, StyleSheet} from 'reac-native'
+import {View, Text, StyleSheet} from 'react-native'
 
 export default class ImageScreen extends React.Component{
     constructor(props){
@@ -7,7 +7,9 @@ export default class ImageScreen extends React.Component{
     }
 
     render(){
-
+        return <View>
+                <Text>This is the ImageScreen</Text>
+                </View>
     }
 }
 

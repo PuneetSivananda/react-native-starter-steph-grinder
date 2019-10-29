@@ -12,7 +12,6 @@ export default class CounterScreen extends React.Component{
     }
     
     render(){
-        console.log(this.state.counter)
         return (<View>
             <Button
             title="Increase"
@@ -28,7 +27,8 @@ export default class CounterScreen extends React.Component{
             title="Decrease"
             onPress={()=>{
                 // this.state.counter--;
-                this.setCounter(this.state.counter-1)
+                // this.setCounter(this.state.counter-1)
+                this.setState({counter:this.state.counter-1})
                 console.log(this.state.counter)
             }} 
             />
@@ -36,7 +36,8 @@ export default class CounterScreen extends React.Component{
             <Text>
                 Current Count: {this.state.counter}
             </Text>
-            </View>)
+            </View>
+            )
     }
 }
 

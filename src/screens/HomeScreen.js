@@ -24,7 +24,11 @@ const HomeScreen = (props) => {
     title="Go to CounterScreen!"
     onPress={()=>props.navigation.navigate("Counter")}      
     />
-    
+
+    <Button 
+    title="Go to ColorScreen!"
+    onPress={()=>props.navigation.navigate("Color")}      
+    />
     </View>
           
 };

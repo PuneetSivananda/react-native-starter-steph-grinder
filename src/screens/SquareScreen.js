@@ -25,7 +25,7 @@ export default SquareScreen = () => {
             return
             }
         }
-
+        
 
     return <View>
         <ColorCounter color="Red" 
@@ -40,16 +40,9 @@ export default SquareScreen = () => {
             onIncrease={()=>{setColor("green",COLOR_INCREMENT)}}
             onDecrease={()=>{setColor("green",-1 * COLOR_INCREMENT)}}
             />       
-        <Button title="Reset Color" onClick={()=>reset()} />
         <View style={{height:150, width:150, backgroundColor:`rgb(${red}, ${green}, ${blue})`}}>
         </View>
     </View>
-}
-const reset = () =>{
-    setColor("green",0)
-    setColor("red",0)
-    setColor("blue",0)
-    return
 }
 
 

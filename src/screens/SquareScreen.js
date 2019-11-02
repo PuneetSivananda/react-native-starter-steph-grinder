@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
 import {View,Text, StyleSheet, Button, FlatList} from 'react-native'
+import ColorCounter from "../components/ColorCounter"
 
-const SquareScreen = () => {
+export default SquareScreen = () => {
     const [colors, setColors] = useState([]);
 
     return <View>
-        <Text>Square Screen</Text>
-        <Button title="Add a Color" />
-       
+        <ColorCounter/>
+        <ColorCounter/>
+        <ColorCounter/>       
     </View>
 }
 
@@ -21,4 +22,3 @@ const RandomRGB = () => {
 
 const stle = StyleSheet.create({
 })
-export default SquareScreen;

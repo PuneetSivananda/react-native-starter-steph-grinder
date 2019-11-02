@@ -3,7 +3,6 @@ import {View,Text, StyleSheet, Button, FlatList} from 'react-native'
 import ColorCounter from "../components/ColorCounter"
 
 const COLOR_INCREMENT=25
-
 export default SquareScreen = () => {
     const [red, setRed] = useState(0);
     const [green, setGreen] = useState(0);
@@ -25,9 +24,9 @@ export default SquareScreen = () => {
         default:
             return
             }
-
         }
-        
+
+
     return <View>
         <ColorCounter color="Red" 
             onIncrease={()=>{setColor("red",COLOR_INCREMENT)}}
@@ -41,10 +40,18 @@ export default SquareScreen = () => {
             onIncrease={()=>{setColor("green",COLOR_INCREMENT)}}
             onDecrease={()=>{setColor("green",-1 * COLOR_INCREMENT)}}
             />       
-        <View style={{height:150, width:150, backgroundColor:`rgb(${red}, ${green}, ${blue})`}}/>
-            
+        <Button title="Reset Color" onClick={()=>reset()} />
+        <View style={{height:150, width:150, backgroundColor:`rgb(${red}, ${green}, ${blue})`}}>
+        </View>
     </View>
 }
+const reset = () =>{
+    setColor("green",0)
+    setColor("red",0)
+    setColor("blue",0)
+    return
+}
+
 
 const RandomRGB = () => {
     const red = Math.floor(Math.random() * 256)

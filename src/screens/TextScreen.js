@@ -6,7 +6,7 @@ export default TextScreen = () => {
     
     return <View>
         <Text>
-            Text Entered is : {name}
+            Enter Password:
         </Text>
         <TextInput 
             style={textStyles.input} 
@@ -15,6 +15,7 @@ export default TextScreen = () => {
             value={name}
             onChangeText={newValue=>setName(newValue)}
         />
+        {name.length<4 ? <Text>Password must be greater than 4 Chars</Text> : false}
     </View>
     
 }

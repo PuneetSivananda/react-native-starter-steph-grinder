@@ -1,48 +1,39 @@
 import React, {useState} from 'react'
 import {View, Text, StyleSheet, Image, Button} from 'react-native'
+// To do add reducer but before that refactor to a function component
 
-
-export default class CounterScreen extends React.Component{
-    constructor(props){
-        super(props)
-        this.state={
-            counter:0
-        }
-        // const [counter, setCounter] = useState(0)
-    }
+export default CounterScreen = () => {
+    const [counter, setCounter] = useState(0);
     
-    render(){
-        return (<View>
-            <Button
+    return <View>
+        <Button
             title="Increase"
-            onPress={()=>{
+            onPress={() => {
                 // this.state.counter++;
-                // this.setCounter(this.state.counter+1)
-                this.setState({counter: this.state.counter+1})
-                console.log(this.state.counter)
+                setCounter(counter+1)
             }}
-            />
+        />
 
-            <Button
+        <Button
             title="Decrease"
-            onPress={()=>{
+            onPress={() => {
                 // this.state.counter--;
-                // this.setCounter(this.state.counter-1)
-                this.setState({counter:this.state.counter-1})
-                console.log(this.state.counter)
-            }} 
-            />
-            
-            <Text>
-                Current Count: {this.state.counter}
-            </Text>
-            </View>
-            )
-    }
+                setCounter(counter-1)
+                // this.setState({ counter: this.state.counter - 1 })
+            }}
+        />
+
+        <Text>
+            Current Count: {counter}
+        </Text>
+    </View>
+    
 }
+
 
 const counterStyles = StyleSheet.create({
     style:{
     }
     
 })
+

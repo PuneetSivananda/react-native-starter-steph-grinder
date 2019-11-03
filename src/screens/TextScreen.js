@@ -2,14 +2,18 @@ import React, {useState, useReducer} from 'react'
 import {View, Text, StyleSheet, TextInput, Image, Button} from 'react-native'
 
 export default TextScreen = () => {
+    const [name, setName] = useState("")
+    
     return <View>
         <Text>
-            Text Screen
+            Text Entered is : {name}
         </Text>
         <TextInput 
             style={textStyles.input} 
             autoCorrect={false}
             autoCapitalize="none"
+            value={name}
+            onChangeText={newValue=>setName(newValue)}
         />
     </View>
     

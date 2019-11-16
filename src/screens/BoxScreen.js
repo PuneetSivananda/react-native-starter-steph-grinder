@@ -13,7 +13,8 @@ const styles = StyleSheet.create(
      viewStyle:{
          borderWidth:3,
          borderColor:'black',
-         alignItems:'flex-start'
+         alignItems:'center',
+         flexDirection:'row'
      },
      textStyle:{
         borderColor:'red',

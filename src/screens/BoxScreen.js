@@ -13,14 +13,16 @@ const styles = StyleSheet.create(
      viewStyle:{
          borderWidth:3,
          borderColor:'black',
-         alignItems:'center',
-         flexDirection:'row'
+         height:200,
+         flexDirection:'row',
+         justifyContent:'space-around'
      },
      textStyle:{
         borderColor:'red',
-        margin:20,
+        // margin:20,
         borderWidth:2,
-        textAlign:"center"
+        // textAlign:"center",
+        // flexDirection:'column'
      }
     }
 )

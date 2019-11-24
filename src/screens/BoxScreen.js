@@ -19,16 +19,18 @@ const styles = StyleSheet.create(
      textOneStyle:{
         borderColor:'red',
         borderWidth:3,
+        flex:4
      },
      textTwoStyle:{
         borderColor:'red',
         borderWidth:3,
-        flex:1
+        flex:4
      },
      textThreeStyle:{
         borderColor:'red',
         borderWidth:3,
-     }
+        flex:2
     }
+}
 )
 export default BoxScreen

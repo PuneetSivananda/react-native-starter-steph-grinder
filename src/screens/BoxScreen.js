@@ -14,22 +14,22 @@ const styles = StyleSheet.create(
          borderWidth:3,
          borderColor:'black',
          height:200,
-         flexDirection:"row"
+         alignItems:'center'
      },
      textOneStyle:{
         borderColor:'red',
         borderWidth:3,
-        flex:4
+        
      },
      textTwoStyle:{
         borderColor:'red',
         borderWidth:3,
-        flex:4
+        alignSelf:'stretch'
      },
      textThreeStyle:{
         borderColor:'red',
         borderWidth:3,
-        flex:2
+        
     }
 }
 )

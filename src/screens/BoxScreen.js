@@ -36,7 +36,8 @@ const styles = StyleSheet.create(
         borderColor:'transparent',
         borderWidth:0,
         backgroundColor:'green',
-        flex:3
+        flex:3,
+        ...StyleSheet.absoluteFillObject
      },
      textThreeStyle:{
         borderColor:'transparent',

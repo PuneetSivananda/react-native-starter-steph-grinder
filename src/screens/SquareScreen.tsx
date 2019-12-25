@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react'
 import {View,Text, StyleSheet, Button, FlatList} from 'react-native'
-import ColorCounter from "../components/ColorCounter"
+import {ColorCounter} from "../components/ColorCounter"
 
 const COLOR_INCREMENT=25
 //reducerFunction
@@ -25,7 +25,7 @@ const reducer = (state, action)=>{
     }
 
 }
-export default SquareScreen = () => {
+export const SquareScreen = () => {
     const [state, dispatch] = useReducer(reducer, {red:0, green:0, blue:0})
     const {red, green, blue} = state 
     //use reducer run dispatch

@@ -1,6 +1,6 @@
 import React from 'react'
-import {View, Text, StyleSheet} from 'react-native'
-import ImageDetail from '../components/ImageDetail'
+import {View, StyleSheet} from 'react-native'
+import {ImageDetail} from '../components/ImageDetail'
 
 export default class ImageScreen extends React.Component{
     constructor(props){

@@ -1,7 +1,7 @@
 import React, {useState, useReducer} from 'react'
 import {View, Text, StyleSheet, TextInput, Image, Button} from 'react-native'
 
-export default TextScreen = () => {
+export const TextScreen = () => {
     const [name, setName] = useState("")
     
     return <View>

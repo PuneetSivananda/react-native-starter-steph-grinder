@@ -17,7 +17,7 @@ const reducer = (state, action)=>{
             return state
     }
 }
-export default CounterScreen = () => {
+export const CounterScreen = () => {
     // const [counter, setCounter] = useState(0);
     const [state, dispatch] = useReducer(reducer, {count:0})
     const {count} = state 

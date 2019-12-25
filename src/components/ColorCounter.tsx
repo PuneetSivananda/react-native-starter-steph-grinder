@@ -1,7 +1,7 @@
-import React, {useState} from 'react'
-import {View,Text, StyleSheet, Button, FlatList} from 'react-native'
+import * as React from 'react';
+import {View,Text, StyleSheet, Button} from 'react-native'
 
-export default ColorCounter = (props) => {
+export const ColorCounter = (props) => {
     // const [colors, setColors] = useState([]);
 
     return <View>
@@ -11,5 +11,3 @@ export default ColorCounter = (props) => {
         </View>
 }
 
-const stle = StyleSheet.create({
-})

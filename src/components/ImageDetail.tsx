@@ -1,8 +1,9 @@
 import React from 'react'
 import {View, Text, StyleSheet, Image} from 'react-native'
+import {ImageDetailProps} from '../class/Props'
 
 
-export default class ImageDetail extends React.Component{
+export class ImageDetail extends React.Component<ImageDetailProps,any>{
     constructor(props){
         super(props)
     }

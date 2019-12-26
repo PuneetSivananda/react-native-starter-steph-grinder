@@ -1,0 +1,16 @@
+food/node_modules/**/*
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+food/web-build/
+food/web-report/
+.expo/*
+food/.expo-shared/*
+food/package-loc*
+food/tsconfig*
+# macOS
+.DS_Store
